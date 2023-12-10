@@ -1245,6 +1245,35 @@ form button:hover{
     opacity: .8;
 }
 
+.logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 15vh; /* Set the container height to full viewport height */
+    margin-bottom: 40px;
+}
+
+.company-logo {
+    width: 80px; /* Adjusted size for smaller screens */
+    height: 80px; /* Adjusted size for smaller screens */
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin: 10px; /* Added margin for spacing between logos */
+}
+
+/* Media query for smaller screens (adjust as needed) */
+@media (max-width: 600px) {
+    .company-logo {
+        width: 60px; /* Further adjusted size for smaller screens */
+        height: 60px; /* Further adjusted size for smaller screens */
+        margin: 5px; /* Adjusted margin for spacing between logos on smaller screens */
+    }
+}
+
+
 .footer{
     background: #080808;
     width: 100%;
