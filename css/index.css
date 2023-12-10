@@ -1263,7 +1263,9 @@ form button:hover{
     transition: transform 0.3s;
     margin: 10px; /* Added margin for spacing between logos */
 }
-
+.company-logo:hover {
+    transform: scale(1.1);
+}
 /* Media query for smaller screens (adjust as needed) */
 @media (max-width: 600px) {
     .company-logo {
